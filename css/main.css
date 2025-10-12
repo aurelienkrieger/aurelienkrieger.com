@@ -1,0 +1,180 @@
+@font-face{
+  font-family: 'Inter Light';
+  src: url("../assets/font/Inter-Light.ttf");
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: normal;
+}
+
+@font-face{
+  font-family: 'Inter Regular';
+  src: url("../assets/font/Inter-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+}
+
+@font-face{
+  font-family: 'Inter ExtraLight';
+  src: url("../assets/font/Inter-ExtraLight.ttf");
+  font-style: normal;
+  font-weight: lighter;
+  font-stretch: normal;
+}
+
+:root {
+  --bg-color: #fbf3e4;
+  --text-color: #4B3F33;
+  --accent-color: #D2691E;
+  --accent2-color: #7bb98b;
+}
+
+body{
+  max-width: 1920px;
+  padding: 2em 3em;
+  margin: auto;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Inter Regular';
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 600px){
+	body {
+		padding: 1em;
+	}
+}
+
+h1{
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed var(--text-color);
+  margin-bottom: 50px;
+}
+
+h2{
+  font-size: 1.1rem;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+li::selection,
+a::selection,
+p::selection,
+tr::selection,
+td::selection,
+i::selection,
+figcaption::selection{
+  background-color: var(--accent2-color);
+  color: var(--bg-color);
+}
+
+a{
+    color: var(--accent-color);
+}
+
+.bluelink:hover{
+  color: var(--bg-color);
+  background-color: var(--accent-color);
+  text-decoration: none;
+  font-style: italic;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo{
+  width: 110px;
+  padding: auto;
+  margin: 0;
+}
+
+#logo a{
+  display: block;
+  text-decoration: none;
+  color: #F0F0F0;
+  font-size: 0.74rem;
+}
+
+#logo img{
+  max-width: 100%;
+  height: auto;
+  filter: invert();
+}
+
+.topnav{
+  margin: 0;
+  padding: 0;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 0rem 0rem 0rem 2.5rem;
+  text-align: right;
+}
+
+.topnav a:hover,
+.topnav a.active {
+  color: var(--accent-color);
+}
+
+.togglenav {
+  display: none;
+}
+
+.togglenav span{
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin-bottom: 5px;
+  background: var(--text-color) !important;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav{
+      display: none;
+  }
+  .togglenav {
+      display: block;
+  }
+
+  .togglenav:hover {
+      cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+      position: relative;
+  }
+
+  .topnav.responsive {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.8rem;
+  }
+}
+
+#intro{
+  max-width: 600px;
+  margin: 3rem 0rem;
+}
+
+.about_section{
+  max-width: 900px;
+  margin: 3rem 0rem;
+  line-height: 140%;
+}
+
+td{
+  padding-right: 1rem;
+  vertical-align: top;
+}

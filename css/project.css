@@ -1,0 +1,80 @@
+body{
+  overflow-y: hidden;
+}
+
+h2{
+  margin-top: 0;
+}
+
+.credits{
+  list-style: none;
+  padding: 0;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+figure{
+  padding: auto;
+  margin: auto;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.container{
+  display: flex;
+  height: calc(100vh - 100px - 6em);
+  margin: 2rem 0rem;
+  gap: 3rem;
+}
+
+.content{
+  width: 50%;
+}
+
+.description{
+  overflow-y: auto;
+}
+
+.credits{
+  margin-top: 2rem;
+}
+
+.credits ul{
+  list-style: none;
+  padding: 0;
+}
+
+.images{
+  overflow-y: scroll;
+  text-align: end;
+}
+
+@media screen and (max-width: 900px){
+  body{
+      overflow-y: scroll;
+  }
+
+  .container{
+      flex-direction: column-reverse;
+      height: 100%;
+      gap: 1rem;
+  }
+
+  .content{
+      width: 100%;
+  }
+
+.images{
+      display: flex;
+      gap: 1rem;
+      text-align: start;
+  }
+
+  figure{
+      min-width: 100%;
+      height: auto;
+  }
+}

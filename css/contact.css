@@ -1,0 +1,9 @@
+#link_contact{
+  color: var(--accent-color);
+}
+
+ul{
+  list-style: none;
+  padding-left: 0;
+  line-height: 140%;
+}

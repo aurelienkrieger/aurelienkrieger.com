@@ -1,0 +1,40 @@
+#link_about{
+  color: var(--accent-color);
+}
+
+#expertise{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 6rem;
+}
+
+@media screen and (max-width: 1000px) {
+  #expertise{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+  }
+
+  #expertise div{
+      margin: 0;
+      max-width: 700px;
+  }
+}
+
+#clients{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+}
+
+#clients ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  #clients{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-column-gap: 2rem;
+  }
+}
